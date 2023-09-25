@@ -3,25 +3,26 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 
 //Images
-import HomePageDesktopLayout from '../components/HomePageDesktopLayout';
-import HomePageMobileLayout from '../components/HomePageMobileLayout';
 
-const IndexPage: React.FC<PageProps> = (props: any) => {
+import CalculatorDesktopLayout from '../components/CalculatorDesktopLayout';
+import CalculatorMobileLayout from '../components/CalculatorMobileLayout';
+
+const CalculatorPage: React.FC<PageProps> = (props: any) => {
   return (
     <div>
       <div className="sm:hidden">
-        <HomePageMobileLayout {...props} />
+        <CalculatorMobileLayout {...props} />
       </div>
       <div className="hidden sm:block">
-        <HomePageDesktopLayout {...props} />
+        <CalculatorDesktopLayout {...props} />
       </div>
     </div>
   );
 };
 
-export default IndexPage;
+export default CalculatorPage;
 
-export const Head: HeadFC = () => <title>Speedie Home Page</title>;
+export const Head: HeadFC = () => <title>PCP Calculator</title>;
 
 export const query = graphql`
   {

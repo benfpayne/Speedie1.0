@@ -1,0 +1,799 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Your personal quote has arrived!</title>
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+  </head>
+  <body align="center" valign="middle">
+    <table
+      width="70%"
+      height="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      bgcolor="white"
+    >
+      <tr>
+        <td align="center" valign="middle">
+          <a
+            href="https://www.speedie.co.nz"
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              margin-top: 48px;
+            "
+            ><img
+              src="https://speedie-website-images.s3.ap-southeast-2.amazonaws.com/logo.PNG"
+              width="25%"
+              style="
+                display: block;
+                margin: auto;
+                min-width: 145px;
+                min-height: 57px;
+                border-radius: 16px;
+              "
+          /></a>
+          <h1
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              font-size: 24px;
+              font-weight: 400;
+              margin-bottom: 48px;
+              margin-top: 48px;
+              text-align: center;
+            "
+          >
+            Hello!
+          </h1>
+          <div
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              text-align: start;
+              font-size: large;
+            "
+          >
+            <p
+              style="
+                font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                  'Open Sans', 'Helvetica Neue', 'Helvetica';
+                margin-bottom: 24px;
+              "
+            >
+              We’re glad you’re as excited as we are for this new way of
+              purchasing a car in New Zealand!
+            </p>
+            <p
+              style="
+                font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                  'Open Sans', 'Helvetica Neue', 'Helvetica';
+                margin-bottom: 24px;
+              "
+            >
+              Speedie is reimagining the way Kiwis own a car. We're introducing
+              a type of car financing known as PCP, which is extremely popular
+              in the UK - over 80% of all new cars sold in the UK are purchased
+              via a PCP deal.
+            </p>
+            <p
+              style="
+                font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                  'Open Sans', 'Helvetica Neue', 'Helvetica';
+                margin-bottom: 24px;
+              "
+            >
+              Speedie financing is like a car lease with options - it
+              drastically reduces your monthlys, and gives you the option to
+              buy, exchange, or return your car at the end of the lease.
+            </p>
+            <p
+              style="
+                font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                  'Open Sans', 'Helvetica Neue', 'Helvetica';
+                margin-bottom: 24px;
+              "
+            >
+              Lower weekly payments, more flexibility, with a nicer car...
+              what's not to love! Stay tuned.
+            </p>
+          </div>
+          <h1
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              margin-top: 36px;
+              margin-bottom: 36px;
+            "
+          >
+            Your personalised estimate for a {{CarName}}*
+          </h1>
+          <table
+            style="
+              width: 50%;
+              margin: auto;
+              border-collapse: collapse;
+              border: none;
+              margin-top: 24px;
+              margin-bottom: 24px;
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              text-align: center;
+            "
+          >
+            <tbody>
+              <tr>
+                <td
+                  style="
+                    padding: 16px;
+                    border-right: 2px solid;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: end;
+                    width: 50%;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Purchase Price (MSRP)
+                </td>
+                <td
+                  style="
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    text-align: start;
+                    width: 50%;
+                  "
+                  align="start"
+                  valign="middle"
+                >
+                  ${{PurchasePrice}}
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    border-right: 2px solid;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: end;
+                    width: 50%;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Term Length
+                </td>
+                <td
+                  style="
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    text-align: start;
+                    width: 50%;
+                  "
+                  align="start"
+                  valign="middle"
+                >
+                  {{TermLength}} years
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    border-right: 2px solid;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: end;
+                    width: 50%;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Kilometres
+                </td>
+                <td
+                  style="
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    text-align: start;
+                    width: 50%;
+                  "
+                  align="start"
+                  valign="middle"
+                >
+                  {{Kilometres}} km
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              border: none;
+              margin-top: 24px;
+              margin-bottom: 24px;
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              text-align: center;
+            "
+          >
+            <tbody>
+              <tr>
+                <td
+                  style="
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    width: 33%;
+                    text-align: end;
+                  "
+                  width="33%"
+                  align="end"
+                  valign="middle"
+                ></td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-size: xx-large;
+                    padding-bottom: 36px;
+                    width: 33%;
+                  "
+                  width="33%"
+                  align="center"
+                  valign="middle"
+                >
+                  <a
+                    href="https://speedie.co.nz"
+                    style="
+                      font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                        'Open Sans', 'Helvetica Neue', 'Helvetica';
+                    "
+                  >
+                    <img
+                      src="https://speedie-website-images.s3.ap-southeast-2.amazonaws.com/logo.PNG"
+                      width="75%"
+                      style="
+                        display: block;
+                        margin: auto;
+                        min-width: 90px;
+                        min-height: 35px;
+                        border-radius: 16px;
+                      "
+                    />
+                  </a>
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-size: larger;
+                    padding-bottom: 36px;
+                    color: gray;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  Traditional Financing**
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: center;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Deposit (10%)
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  ${{DepositAmount}}
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  ${{DepositAmount}}
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: center;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Interest rate
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  {{InterestRate}}%
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  {{InterestRate}}%
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: center;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  {{nMonths}} monthly payments of
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    color: #4bae4f;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  ${{PcpAmount}} /month
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    color: #ff4141;
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  ${{NormalAmount}} /month
+                </td>
+              </tr>
+              <tr style="background-color: #fae7e2">
+                <td
+                  colspan="3"
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-weight: 600;
+                    text-decoration: underline;
+                    font-size: larger;
+                    text-align: center;
+                    border-top-left-radius: 25px;
+                    border-top-right-radius: 25px;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  End of Agreement ({{TermLength}} years)
+                </td>
+              </tr>
+              <tr style="background-color: #fae7e2">
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: center;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Total Paid
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    color: #4bae4f;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  ${{TotalPayablePcp}}
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    color: #ff4141;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  ${{TotalPayableNormal}}
+                </td>
+              </tr>
+              <tr style="background-color: #fae7e2">
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: center;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Optional final payment to keep the car
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  ${{BalloonPayment}}
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  <img
+                    src="https://speedie-website-images.s3.ap-southeast-2.amazonaws.com/delete-button.png"
+                    style="width: 40px; height: 40px; object-fit: contain"
+                  />
+                </td>
+              </tr>
+              <tr style="background-color: #fae7e2">
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: center;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Exchange for a new car
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  <img
+                    src="https://speedie-website-images.s3.ap-southeast-2.amazonaws.com/correct.png"
+                    style="width: 40px; height: 40px; object-fit: contain"
+                  />
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  <img
+                    src="https://speedie-website-images.s3.ap-southeast-2.amazonaws.com/delete-button.png"
+                    style="width: 40px; height: 40px; object-fit: contain"
+                  />
+                </td>
+              </tr>
+              <tr style="background-color: #fae7e2">
+                <td
+                  style="
+                    vertical-align: middle;
+                    padding: 16px;
+                    font-weight: 600;
+                    font-size: larger;
+                    text-align: center;
+                    border-bottom-left-radius: 25px;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  Return the car
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  <img
+                    src="https://speedie-website-images.s3.ap-southeast-2.amazonaws.com/correct.png"
+                    style="width: 40px; height: 40px; object-fit: contain"
+                  />
+                </td>
+                <td
+                  style="
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    border-bottom-right-radius: 25px;
+                  "
+                  align="center"
+                  valign="middle"
+                >
+                  <img
+                    src="https://speedie-website-images.s3.ap-southeast-2.amazonaws.com/delete-button.png"
+                    style="width: 40px; height: 40px; object-fit: contain"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h2
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              margin-top: 64px;
+            "
+          >
+            Speedie is introducing PCP financing - a revolutionary way to
+            finance your next car.
+          </h2>
+          <h2
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+            "
+          >
+            Enjoy way cheaper recurring payments, and the flexibility to buy,
+            exchange, or return the car at the end!
+          </h2>
+          <h2
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              margin-top: 48px;
+            "
+          >
+            How are the weekly payments so low? Is there a limit to how much I
+            can drive the car? Can I buy a used car?
+          </h2>
+          <table
+            style="
+              width: 75%;
+              margin-top: 32px;
+              margin-bottom: 32px;
+              border-collapse: collapse;
+              border: none;
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              text-align: center;
+            "
+          >
+            <tbody>
+              <tr>
+                <td
+                  style="
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    text-align: end;
+                  "
+                  align="end"
+                  valign="middle"
+                >
+                  <a
+                    href="https://www.speedie.co.nz"
+                    style="
+                      font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                        'Open Sans', 'Helvetica Neue', 'Helvetica';
+                    "
+                    ><button
+                      style="
+                        width: 200px;
+                        background-color: #fae7e2;
+                        border-radius: 25px;
+                        padding: 16px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                          Cantarell, 'Open Sans', 'Helvetica Neue', 'Helvetica';
+                        font-weight: 600;
+                        color: black;
+                        border: none;
+                        font-size: large;
+                        white-space: nowrap;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      Learn about PCP
+                    </button></a
+                  >
+                </td>
+                <td
+                  style="
+                    vertical-align: middle;
+                    font-size: large;
+                    padding: 16px;
+                    text-align: start;
+                  "
+                  align="start"
+                  valign="middle"
+                >
+                  <a
+                    href="https://www.speedie.co.nz/faqs"
+                    style="
+                      font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                        'Open Sans', 'Helvetica Neue', 'Helvetica';
+                    "
+                    ><button
+                      style="
+                        width: 200px;
+                        background-color: #fae7e2;
+                        border-radius: 25px;
+                        padding: 16px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                          Cantarell, 'Open Sans', 'Helvetica Neue', 'Helvetica';
+                        font-weight: 600;
+                        color: black;
+                        border: black;
+                        font-size: large;
+                        white-space: nowrap;
+                        cursor: pointer;
+                      "
+                    >
+                      Read our FAQs
+                    </button></a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              margin-top: 32px;
+              font-size: larger;
+            "
+          >
+            Learn about how our PCP financing works on our
+            <a
+              href="https://www.speedie.co.nz"
+              style="
+                font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                  'Open Sans', 'Helvetica Neue', 'Helvetica';
+              "
+              >website</a
+            >
+            or alternatively, email us at
+            <a
+              href="mailto:info@speedie.co.nz"
+              style="
+                font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                  'Open Sans', 'Helvetica Neue', 'Helvetica';
+              "
+              >info@speedie.co.nz</a
+            >.
+          </div>
+          <div
+            style="
+              font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', 'Helvetica';
+              margin-top: 48px;
+              margin-bottom: 48px;
+            "
+          >
+            <p
+              style="
+                font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                  'Open Sans', 'Helvetica Neue', 'Helvetica';
+                font-style: italic;
+                font-size: small;
+                color: gray;
+                text-align: start;
+              "
+            >
+              *This figure is not a quote. It is an estimate based on the
+              purchase price, an interest rate of 7% and a 10% deposit. The
+              total amount payable excludes fees, and will vary depending on the
+              lender and agreed upon contract.
+            </p>
+            <p
+              style="
+                font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                  'Open Sans', 'Helvetica Neue', 'Helvetica';
+                font-style: italic;
+                font-size: small;
+                color: gray;
+                text-align: start;
+              "
+            >
+              **This figure is not a quote. It is an estimate based on
+              traditional car loans and financing agreements
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
