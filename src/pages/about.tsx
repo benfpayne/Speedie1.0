@@ -11,7 +11,7 @@ const AboutPage: React.FC<PageProps> = (props: any) => {
       <div className="w-screen mx-auto px-8 text-center">
         <h1 className="font-serif my-24 text-3xl font-bold">About us</h1>
         <div className="text-center">
-          We’re a group of 4 passionate individuals trying to bring the most
+          We are a group of 4 passionate individuals trying to bring the most
           popular and convenient way to finance a car in the UK, to New Zealand.
         </div>
         <div className="mt-12">Watch this space.</div>
