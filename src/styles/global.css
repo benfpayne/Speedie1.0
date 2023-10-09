@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #index-email {
@@ -47,7 +47,7 @@ body {
 }
 
 .tooltip .tooltiptext::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 50%;

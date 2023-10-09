@@ -6,15 +6,19 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px'
     },
     extend: {
       colors: {
-        primary: '#af948c',
+        primary: '#FF8666',
+        primaryBackground: '#FAE7E2',
+        greenBackground: '#243500',
+        accentGreen: '#E1FFA1',
+        grayBackground: '#FBFBFB',
         accent: '#fbece7',
         accentTwo: '#FAE7E2',
         tan: '#E6E3DD',
@@ -24,7 +28,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Josefin Sans'],
+        sans: ['Poppins'],
         serif: ['Playfair Display']
       },
       fontSize: {

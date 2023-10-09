@@ -8,22 +8,26 @@ const Header: React.FC<PageProps> = (props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
+    { name: 'about', href: '/about' },
     { name: 'calculator', href: '/calculator' },
-    { name: 'about us', href: '/about' },
     { name: 'contact', href: '/contact' },
     { name: 'faqs', href: '/faqs' }
   ];
 
+  function classNames(...classes: any) {
+    return classes.filter(Boolean).join(' ');
+  }
+
   return (
     <header className="sticky top-0 z-50 bg-white">
       <nav
-        className="flex mx-auto max-w-7xl items-center justify-between p-6 px-8 lg:px-12"
+        className="flex justify-between sm:justify-start mx-auto max-w-7xl items-end p-6 px-8 lg:px-12"
         aria-label="Global"
       >
         <Link to="/">
           <span className="sr-only">speedie</span>
-          <h2 className="transition-opacity duration-300 hover:opacity-50 text-2xl lg:text-4xl italic font-bold">
-            speedie
+          <h2 className="font-serif transition-opacity duration-300 hover:opacity-50 text-2xl lg:text-4xl font-bold pr-20">
+            Speedie
           </h2>
         </Link>
         <div className="flex sm:hidden">
@@ -39,8 +43,14 @@ const Header: React.FC<PageProps> = (props) => {
         <div className="hidden sm:flex sm:gap-x-12">
           {navigation.map((item) => (
             <Link
+              key={item.name}
               to={item.href}
-              className="transition-opacity duration-300 hover:opacity-50 text-2xl font-semibold leading-6 text-gray-900"
+              className={classNames(
+                'transition-opacity duration-300 hover:opacity-50 text-xl leading-6',
+                item.href + '/' === 'props.location.pathname'
+                  ? 'text-primary'
+                  : 'text-gray-900'
+              )}
             >
               {item.name}
             </Link>
@@ -58,7 +68,9 @@ const Header: React.FC<PageProps> = (props) => {
           <div className="flex items-center justify-between">
             <Link to="/">
               <span className="sr-only">speedie</span>
-              <h2 className="text-2xl italic font-bold">speedie</h2>
+              <h2 className="font-serif transition-opacity duration-300 hover:opacity-50 text-2xl lg:text-4xl font-bold pr-20">
+                Speedie
+              </h2>
             </Link>
             <button
               type="button"
@@ -73,13 +85,13 @@ const Header: React.FC<PageProps> = (props) => {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
-                    className="px-2.5 block rounded-lg py-4 text-3xl leading-7 text-gray-900 hover:bg-gray-50"
+                    to={item.href}
+                    className="px-2.5 block rounded-lg py-4 text-xl leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
