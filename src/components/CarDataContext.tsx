@@ -59,9 +59,11 @@ export const CarDataProvider = ({ children }) => {
     }
   ];
 
-  const [selectedMake, setSelectedMake] = useState('');
-  const [selectedModel, setSelectedModel] = useState('');
-  const [selectedDescription, setSelectedDescription] = useState('');
+  const [selectedMake, setSelectedMake] = useState('Tesla');
+  const [selectedModel, setSelectedModel] = useState('Model 3');
+  const [selectedDescription, setSelectedDescription] = useState(
+    'Rear Wheel Drive 60kWh'
+  );
   const [makeQuery, setMakeQuery] = useState('');
   const [modelQuery, setModelQuery] = useState('');
   const [descriptionQuery, setDescriptionQuery] = useState('');
@@ -69,7 +71,7 @@ export const CarDataProvider = ({ children }) => {
   const [kilometers, setKilometers] = useState(distance[2]); // Make sure 'distance' is defined
   const [formError, setFormError] = useState(false);
   const [carFinanceInfo, setCarFinanceInfo] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [calculating, setCalculating] = useState(true); // Starts true to calc the default model 3
   const [modalOpen, setModalOpen] = useState(false);
 
   const [submitted, setSubmitted] = useState(false);
@@ -96,8 +98,8 @@ export const CarDataProvider = ({ children }) => {
     setFormError,
     carFinanceInfo,
     setCarFinanceInfo,
-    isLoading,
-    setIsLoading,
+    calculating,
+    setCalculating,
     modalOpen,
     setModalOpen,
     submitted,

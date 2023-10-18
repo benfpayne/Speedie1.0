@@ -15,13 +15,17 @@ module.exports = {
     extend: {
       colors: {
         primary: '#FF8666',
+        primaryTwo: '#FF8271',
         primaryBackground: '#FAE7E2',
         greenBackground: '#243500',
         accentGreen: '#E1FFA1',
         grayBackground: '#FBFBFB',
+        lightGreenBackground: '#F2F6E8',
+        grayAccent: '#6C6E7B',
         accent: '#fbece7',
         accentTwo: '#FAE7E2',
         tan: '#E6E3DD',
+
         silver: {
           100: '#d5c2bb',
           200: '#c0b3af'
