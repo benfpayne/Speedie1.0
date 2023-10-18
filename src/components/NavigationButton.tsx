@@ -6,7 +6,7 @@ export default function NavigationButton(props : any) {
     <div>
       <a
         href={href}
-        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-primary rounded-3xl hover:bg-tan focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-primary rounded-3xl hover:bg-tan focus:ring-4 focus:ring-blue-300"
       >
         {title}
         <svg
