@@ -574,9 +574,12 @@ export default function CarCalculator(props: any) {
               <div className="text-lg font-bold">👀 Like what you see?</div>
               <div className="mt-2 leading-7">
                 Drop us your email and we'll send you a free payment breakdown
-                and options for your {carFinanceInfo.carRecord.Make}{' '}
-                {carFinanceInfo.carRecord.Model}{' '}
-                {carFinanceInfo.carRecord.Description}
+                and options for your{' '}
+                {calculating
+                  ? null
+                  : `${carFinanceInfo.carRecord.Make} 
+                ${carFinanceInfo.carRecord.Model} 
+                ${carFinanceInfo.carRecord.Description}`}
               </div>
             </div>
             {emailLoading ? (
