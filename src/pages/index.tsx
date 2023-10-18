@@ -313,7 +313,7 @@ const IndexPage: React.FC<PageProps> = (props: any) => {
                 </h1>
                 <p className="mt-4 text-xl text-center leading-8 mb-4">
                   Kickstart your journey to owning a brand new car in just 5
-                  minutes
+                  minutes.
                 </p>
                 <button
                   onClick={() => navigate('/calculator')}
