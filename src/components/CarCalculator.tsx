@@ -10,10 +10,10 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
-import { storeCustomerDataWithEmail } from '../CustomerDataClient';
-import { sendEmail } from '../EmailClient';
 import { CarRecord } from '../components/types/CarRecord';
 import { PaymentCalculations } from '../components/types/PaymentCalculations';
+import { storeCustomerDataWithEmail } from '../CustomerDataClient';
+import { sendEmail } from '../EmailClient';
 import useCarDataClient from '../hooks/useCarDataClient';
 import { formatMoney } from '../utils/currency';
 import { useCarDataContext } from './CarDataContext';
@@ -243,7 +243,7 @@ export default function CarCalculator(props: any) {
     <section id="Car calculator" className="pt-12 md:py-12 md:bg-accentTwo">
       <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:rounded-lg">
-          <div className="w-full bg-lightGreenBackground pt-12 px-4 sm:px-6 md:w-1/2 md:bg-white md:p-12 md:pt-20 md:pb-20 md:rounded-l-xl">
+          <div className="w-full pt-12 px-4 sm:px-6 md:w-1/2 md:bg-white md:p-12 md:pt-20 md:pb-20 md:rounded-l-xl">
             <h2 className="text-2xl font-bold mb-8">
               Tell us about your <span className="text-primary">dream car</span>
             </h2>
