@@ -9,6 +9,7 @@ import Header from '../components/header';
 //Images
 import { ArrowLongRightIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
 import Footer from '../components/footer';
+import PreFooter from '../components/PreFooter';
 import AstonMartinLogo from '../images/carLogos/aston.png';
 import AudiLogo from '../images/carLogos/audi.png';
 import BYDLogo from '../images/carLogos/byd.png';
@@ -360,17 +361,7 @@ const IndexPage: React.FC<PageProps> = (props: any) => {
           </div>
         </div>
       </section>
-      <section id="Kiwis for Kiwis" className="bg-greenBackground py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-white">
-            <h2 className="text-4xl font-bold">🥝 Made by Kiwi's for Kiwis</h2>
-            <p className="mt-8">
-              Car financing made affordable by other Kiwi's trying to make
-              driving their dream cars affordable
-            </p>
-          </div>
-        </div>
-      </section>
+      <PreFooter/>
       <Footer footnotes={false} />
     </div>
   );
