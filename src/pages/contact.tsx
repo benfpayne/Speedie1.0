@@ -9,6 +9,7 @@ import Lottie from 'lottie-react';
 import storeCustomerData from '../CustomerDataClient';
 import Footer from '../components/footer';
 import Header from '../components/header';
+import Merc from '../images/cars/merc.svg';
 
 const ContactPage: React.FC<PageProps> = (props: any) => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
@@ -58,67 +59,82 @@ const ContactPage: React.FC<PageProps> = (props: any) => {
   }
 
   return (
-    <div className="w-screen h-screen">
+    <div>
       <Header />
-      <div className="flex my-24 justify-center">
-        <h1 className="font-serif text-3xl mb-8 font-bold">Contact us</h1>
-      </div>
-      <div className="flex flex-col items-center justify-center mb-12 mx-8">
-        <form
-          className="flex"
-          onSubmit={handleSubmit((data) => onSubmit(data))}
-        >
-          <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-col">
-              <input
-                {...register('email')}
-                type="email"
-                name="email"
-                id="index-email"
-                className="md:w-96 border-b-2 border-t-0 border-l-0 border-r-0 border-gray-200 focus:shadow-none focus:ring-none focus:outline-none focus:border-primary mr-4"
-                placeholder="Enter your email to register your interest..."
-              />
-              {errors.email && (
-                <div className="flex items-center pointer-events-none mt-2 text-red-600">
-                  <svg
-                    className="h-5 w-5 text-red-500 mr-1"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
-                      clipRule="evenodd"
+      <section id="contact-us" className="pb-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col-reverse md:flex-row justify-between items-center">
+            <div className="md:w-1/2 md:mr-16">
+              <h1 className="font-sans text-5xl font-bold text-primary leading-[4rem]">
+                Contact us
+              </h1>
+              <form
+                className="flex mt-4"
+                onSubmit={handleSubmit((data) => onSubmit(data))}
+              >
+                <div>
+                  {!isSubmitted && !isLoading ? (
+                    <div className="flex flex-col">
+                      <input
+                        {...register('email')}
+                        type="email"
+                        name="email"
+                        id="index-email"
+                        className="md:w-96 pl-0 pr-0 border-b-2 border-t-0 border-l-0 border-r-0 border-gray-200 focus:shadow-none focus:ring-none focus:outline-none focus:border-primary mr-4"
+                        placeholder="Enter your email to register your interest..."
+                      />
+
+                      {errors.email && (
+                        <div className="flex items-center pointer-events-none mt-2 text-red-600">
+                          <svg
+                            className="h-5 w-5 text-red-500 mr-1"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          {errors.email.message}
+                        </div>
+                      )}
+                    </div>
+                  ) : null}
+                  {!isSubmitted && !isLoading ? (
+                    <button className="transition-opacity duration-300 hover:opacity-75 w-32 rounded-3xl py-2 mt-6 bg-primary text-white text-base">
+                      Submit
+                    </button>
+                  ) : isLoading ? (
+                    <Lottie
+                      animationData={carAnimation}
+                      loop={true}
+                      className="w-auto h-48"
                     />
-                  </svg>
-                  {errors.email.message}
+                  ) : (
+                    <span className="mt-8">
+                      Thank you for registering, we'll be in touch soon!
+                    </span>
+                  )}
+                  <p className="mt-6 text-xl">
+                    Or alternatively, contact us at{' '}
+                    <a
+                      href="mailto:info@speedie.co.nz"
+                      className="underline italic"
+                    >
+                      info@speedie.co.nz
+                    </a>
+                  </p>
                 </div>
-              )}
+              </form>
             </div>
-            {!isSubmitted && !isLoading ? (
-              <button className="underline underline-offset-2 mt-8 rounded-3xl py-3 px-8 bg-primary text-white">
-                Submit
-              </button>
-            ) : isLoading ? (
-              <Lottie
-                animationData={carAnimation}
-                loop={true}
-                className="w-auto h-48"
-              />
-            ) : (
-              <span className="mt-8">
-                Thank you for registering, we'll be in touch soon!
-              </span>
-            )}
+            <div className="overflow-hidden w-1/2 min-w-[293px]">
+              <img className="h-auto " alt="car" src={Merc} />
+            </div>
           </div>
-        </form>
-        <span className="mt-20 text-2xl">
-          Or alternatively, contact us at{' '}
-          <a href="mailto:info@speedie.co.nz" className="underline italic">
-            info@speedie.co.nz
-          </a>
-        </span>
-      </div>
+        </div>
+      </section>
       <Footer footnotes={false} />
     </div>
   );

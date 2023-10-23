@@ -9,7 +9,7 @@ const CalculatorPage: React.FC<PageProps> = (props: any) => {
   return (
     <div>
       <Header />
-      <section id="car-calculator" className="pt-24">
+      <section id="car-calculator" className="pt-12 md:pt-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="font-sans text-5xl font-bold leading-[4rem] md:text-center">
             Car finance calculator
@@ -91,15 +91,6 @@ const CalculatorPage: React.FC<PageProps> = (props: any) => {
       </section>
       <Footer footnotes={true} />
     </div>
-
-    // <div>
-    //   <div className="sm:hidden">
-    //     <CalculatorMobileLayout {...props} />
-    //   </div>
-    //   <div className="hidden sm:block">
-    //     <CalculatorDesktopLayout {...props} />
-    //   </div>
-    // </div>
   );
 };
 
