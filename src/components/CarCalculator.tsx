@@ -10,10 +10,10 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
-import { CarRecord } from '../components/types/CarRecord';
-import { PaymentCalculations } from '../components/types/PaymentCalculations';
 import { storeCustomerDataWithEmail } from '../CustomerDataClient';
 import { sendEmail } from '../EmailClient';
+import { CarRecord } from '../components/types/CarRecord';
+import { PaymentCalculations } from '../components/types/PaymentCalculations';
 import useCarDataClient from '../hooks/useCarDataClient';
 import { formatMoney } from '../utils/currency';
 import { useCarDataContext } from './CarDataContext';
@@ -295,7 +295,7 @@ export default function CarCalculator(props: any) {
                             className={({ active }) =>
                               `relative cursor-default select-none py-2 pl-5 pr-4 ${
                                 active
-                                  ? 'bg-primary text-white'
+                                  ? 'bg-primary text-white font-bold'
                                   : 'text-gray-900'
                               }`
                             }

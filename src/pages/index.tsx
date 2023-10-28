@@ -8,8 +8,8 @@ import Header from '../components/header';
 
 //Images
 import { ArrowLongRightIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
-import Footer from '../components/footer';
 import PreFooter from '../components/PreFooter';
+import Footer from '../components/footer';
 import AstonMartinLogo from '../images/carLogos/aston.png';
 import AudiLogo from '../images/carLogos/audi.png';
 import BYDLogo from '../images/carLogos/byd.png';
@@ -62,7 +62,7 @@ const IndexPage: React.FC<PageProps> = (props: any) => {
   return (
     <div>
       <Header />
-      <section id="landing-banner" className="pb-12">
+      <section id="landing-banner" className="pb-12 lg:pb-0">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row-reverse justify-between items-center">
             <div className="overflow-hidden w-1/2 min-w-[293px]">
@@ -72,7 +72,7 @@ const IndexPage: React.FC<PageProps> = (props: any) => {
               <h1 className="font-sans text-5xl font-bold text-primary leading-[4rem]">
                 Drive the car you want for less
               </h1>
-              <p className="mt-6 text-xl">
+              <p className="mt-6 text-xl font-sans">
                 New age car financing with lower weekly payments and more
                 flexibility
               </p>
@@ -134,7 +134,7 @@ const IndexPage: React.FC<PageProps> = (props: any) => {
                           className={({ active }) =>
                             `relative cursor-default select-none py-2 pl-4 pr-4 ${
                               active
-                                ? 'bg-orange-100 text-primary font-bold'
+                                ? 'bg-primary text-white font-bold'
                                 : 'text-gray-900'
                             }`
                           }
@@ -179,12 +179,20 @@ const IndexPage: React.FC<PageProps> = (props: any) => {
                   </div>
                 </div>
               </div>
-              <button
-                onClick={() => navigate('/calculator')}
-                className="transition-opacity duration-300 hover:opacity-75 w-32 rounded-3xl py-2 mt-4 bg-primary text-white text-base"
-              >
-                Start now
-              </button>
+              <div className="flex md:justify-center">
+                <button
+                  onClick={() => navigate('/calculator')}
+                  className="transition-opacity duration-300 hover:opacity-75 w-32 rounded-3xl py-2 mt-4 bg-primary text-white text-base mr-4"
+                >
+                  Apply now
+                </button>
+                <button
+                  onClick={() => navigate('/calculator')}
+                  className="transition-opacity duration-300 hover:opacity-75 w-32 rounded-3xl py-2 mt-4 bg-white text-primary text-base"
+                >
+                  Save quote
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -361,7 +369,7 @@ const IndexPage: React.FC<PageProps> = (props: any) => {
           </div>
         </div>
       </section>
-      <PreFooter/>
+      <PreFooter />
       <Footer footnotes={false} />
     </div>
   );
